@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Supply Entry Form | Balloon.lk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>Balloon.lk - Supply Entry Form</header>
+
+  <nav>
+    <a href="product_list.html">Go to Product List</a>
+  </nav>
+
+  <div class="container">
+    <h1>Supply Entry Form</h1>
+    <form id="supplyForm">
+      <label for="supplyId">Supply ID:</label>
+      <input type="text" id="supplyId" name="supplyId" required />
+
+      <label for="productId">Product ID:</label>
+      <input type="text" id="productId" name="productId" required placeholder="e.g., P1, P2, P3 ..." />
+
+      <label for="productAmount">Product Amount:</label>
+      <input type="number" id="productAmount" name="productAmount" min="1" required />
+
+      <label for="supplyDate">Supply Date:</label>
+      <input type="date" id="supplyDate" name="supplyDate" required />
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="message" style="color: red; font-weight: bold;"></p>
+  </div>
+
+  <script src="supply_form.js"></script>
+</body>
+</html>
